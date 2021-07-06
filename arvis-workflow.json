@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "category": "Productivity",
+  "name": "arvis-aws",
+  "readme": "",
+  "creator": "Sam Verschueren",
+  "webAddress": "https://github.com/jopemachine/arvis-aws",
+  "defaultIcon": "icon.png",
+  "description": "Search through the AWS JavaScript SDK",
+  "version": "0.0.2",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "title": "Search through the AWS JavaScript SDK",
+      "command": "aws",
+      "scriptFilter": "node index.js {query}",
+      "runningSubtext": "Hold on a sec until script work is done...",
+      "argType": "optional",
+      "withspace": true,
+      "actions": [
+        {
+          "type": "open",
+          "modifiers": "normal",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}

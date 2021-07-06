@@ -1,0 +1,48 @@
+{
+  "name": "arvis-aws",
+  "version": "0.0.2",
+  "description": "Search through the AWS JavaScript SDK",
+  "license": "MIT",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublish": "./make.js"
+  },
+  "files": [
+    "index.js",
+    "data.json",
+    "icon.png",
+    "arvis-workflow.json",
+    "icons"
+  ],
+  "keywords": [
+    "arvis",
+    "arvish",
+    "workflow",
+    "aws",
+    "awssdk",
+    "documentation",
+    "productivity"
+  ],
+  "dependencies": {
+    "arvish": ">=0.4.6",
+    "pify": "^3.0.0",
+    "string-occurrence": "^1.2.0"
+  },
+  "devDependencies": {
+    "arvish-test": ">=0.1.0",
+    "ava": "*",
+    "aws-sdk": "^2.221.1",
+    "path-exists": "^3.0.0",
+    "xo": "*"
+  }
+}
